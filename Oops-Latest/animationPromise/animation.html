@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <script src="./animationPromise.js" defer></script>
+    <script src="./animation.js" defer></script>
+   
+    <style>
+      .container {
+        height: 3rem;
+      }
+
+      .animation{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .animation2{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+      .animation3{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+
+      .event-log {
+        width: 25rem;
+        height: 2rem;
+        border: 1px solid black;
+        margin: 0.2rem;
+        padding: 0.2rem;
+      }
+
+      .active {
+        animation-duration: 2s;
+        animation-name: slidein;
+        
+      }
+
+      @keyframes slidein {
+        from {
+          transform: translateX(0%);
+        }
+
+        to {
+          transform: translateX(300%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation-example">
+      <button id="applyAnimation" class="activate" type="button">Activate animation</button>
+      <div class="event-log"></div>
+      <div class="container">
+        <div class="animation"></div>
+        <div class="animation2"></div>
+        <div class="animation3"></div>
+      </div>
+     
+    </div>
+  </body>
+</html>
