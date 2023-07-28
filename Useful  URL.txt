@@ -1,0 +1,21 @@
+https://blog.bitsrc.io/most-important-javascript-coding-challenge-aa14c956d2df
+
+https://codeburst.io/javascript-interview-questions-arrays-f7a418d670f5
+https://github.com/jwill9999/JavaScript-Array-Interview-Practice
+
+https://github.com/anburocky3/javascript-interview-questions.git
+
+
+https://javascript.info/
+https://www.javascripttutorial.net/ 
+https://github.com/Asabeneh/30-Days-Of-React/blob/master/01_Day_JavaScript_Refresher/01_javascript_refresher.md#exercise-level-1
+
+
+React:
+https://github.com/Asabeneh/30-Days-Of-React
+
+exercises question:
+
+https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php
+https://www.tutorialsandyou.com/javascript/javascript-array-exercises-practice-and-solution-15.html
+https://gist.github.com/ashishkrtewari/26885e33b9bbf378f558820620f8edb7

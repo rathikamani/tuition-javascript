@@ -1,0 +1,395 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset238 Courier New;}{\f2\fnil Courier New;}{\f3\fnil\fcharset0 monospace;}{\f4\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red0\green176\blue80;\red255\green0\blue0;\red0\green0\blue255;\red0\green77\blue187;\red0\green119\blue170;\red245\green242\blue240;\red0\green0\blue0;\red136\green63\blue68;\red153\green153\blue153;\red154\green110\blue58;\red153\green0\blue85;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\f0\fs22\lang1033\par
+1.javascript basic\par
+2.javascript for web\par
+3.javascript for mobile\par
+4.javascript frameworks\par
+    1.Reactjs\par
+    2.vuejs\par
+    3.Angularjs and so on.\par
+5.javascript variables (let,const,var) and primitiu55415:50 18-08-2021hmive value and refernce type:\par
+6.javascript Datatypes\par
+7.javascript opeators\par
+8.javascript loop (if-else,switch-case,for loop,while loop, Do-while loop, for-in, for-of)\par
+9.javascript factory functions\par
+10.javascript object advanced\par
+11.javascript constructor functions and constructor property\par
+12.javascript factory functions\par
+13.functions are objects\par
+14.enmerating properties of an object\par
+15.cloning an javascript object\par
+16.javascript garbage collection\par
+17.Javascript built-in-object function\par
+18.javascript array(add element, find element,remove element, empty element, combining and extracting array,spread opeator, iterating a javascript array, joining and splitting js array, sorting js array, finding array, map(), chaining methods,array.reduce())\par
+                    \par
+\par
+\cf1 Solution:\par
+\cf2 5.javascript variables (let,const,var) and primitive value and refernce type:\par
+{\cf0{\field{\*\fldinst{HYPERLINK file:///C:/Users/rathika_s/Desktop/Interview/JavaScript_%20var,%20let,%20const%20-%20DEV%20Community.html }}{\fldrslt{file:///C:/Users/rathika_s/Desktop/Interview/JavaScript_%20var,%20let,%20const%20-%20DEV%20Community.html\ul0\cf0}}}}\cf0\f0\fs22\par
+\par
+\cf2 primitive value and refernce type:\par
+\cf0 A variable can hold one of two value types: primitive values or reference values.\par
+\par
+Primitive values are data that are stored on the stack.\par
+Primitive value is stored directly in the location that the variable accesses.\par
+ex:\par
+ let x =10;\par
+ let y = x;\par
+ x = 20;\par
+ o:\par
+ x:20\par
+ y:10\par
+Reference values are objects that are stored in the heap.\par
+Reference value stored in the variable location is a pointer to a location in memory where the object is stored.\par
+ex:\par
+let x = \{ value: 10 \};\par
+let y = x;\par
+x.value = 20;\par
+o:\par
+x: \{ value: 20\}\par
+y: \{ value:20\}\par
+Primitive types include Undefined, Null, Boolean, Number, or String\par
+{{\field{\*\fldinst{HYPERLINK https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/ }}{\fldrslt{https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/\ul0\cf0}}}}\f0\fs22\par
+\par
+\par
+\cf2 6.javascript Datatypes\cf0\par
+  ==> ndefined, Null, Boolean, Number, or String, Array, Function, object\par
+  Dynamic typing in javascript\par
+  EX: string x = 10; // static typeing\par
+  EX: x = 10; // Dynamic typeing\par
+\par
+\cf2 7.javascript opeators?\par
+\cf0  1.Arithmetic opeator\par
+ 2.comparsion opeator\par
+ 3.Assignment opeator\par
+ 4.logical opeator\par
+ 5.bitwise opeator\par
+\par
+\par
+\cf2 8.factory:\par
+\cf0 A factory function is a function that returns a new object\par
+function createPerson(firstName, lastName) \{\par
+    return \{\par
+        firstName: firstName,\par
+        lastName: lastName,\par
+        getFullName() \{\par
+            return firstName + ' ' + lastName;\par
+        \}\par
+    \}\par
+\}\par
+\par
+let john = createPerson('John', 'Doe'),\par
+    jane = createPerson('Jane', 'Doe');\par
+\par
+console.log(john.getFullName());\par
+console.log(jane.getFullName());\par
+Code language: JavaScript (javascript)\par
+\par
+\par
+\cf2 9.generators:\cf0\par
+{{\field{\*\fldinst{HYPERLINK https://www.javascripttutorial.net/es6/javascript-generators/ }}{\fldrslt{https://www.javascripttutorial.net/es6/javascript-generators/\ul0\cf0}}}}\f0\fs22\par
+In JavaScript, a regular function is executed based on the run-to-completion model. It cannot pause midway and then continues from where it paused. For example:\par
+\par
+function foo() \{\par
+    console.log('I');\par
+    console.log('cannot');\par
+    console.log('pause');\par
+\}\par
+\par
+ES6 introduces a new kind of function that is different from a regular function: function generator or generator.\par
+\par
+A generator can pause midway and then continues from where it paused. For example:\par
+\par
+function* generate() \{\par
+    console.log('invoked 1st time');\par
+    yield 1;\par
+    console.log('invoked 2nd time');\par
+    yield 2;\par
+\}\par
+Code language: JavaScript (javascript)\par
+First, you see the asterisk (*) after the function keyword. The asterisk denotes that the generate() is a generator, not a normal function.\par
+Second, the yield statement returns a value and pauses the execution of the function.\par
+The Generator object returns another object with two properties/'';: done and value. In other words, a Generator object is iterable.\par
+\par
+The following calls the next() method on the Generator object:\par
+\par
+let result = gen.next();\par
+console.log(result);\par
+Code language: JavaScript (javascript)\par
+Output:\par
+\par
+invoked 1st time\par
+\{ value: 1, done: false \}\par
+\par
+\cf2 10.Asynchronous Module Definition (AMD):\par
+{\cf0{\field{\*\fldinst{HYPERLINK file:///C:/Users/rathika_s/Desktop/Interview/Asynchronous_Module_Definition_overview_vector.svg }}{\fldrslt{file:///C:/Users/rathika_s/Desktop/Interview/Asynchronous_Module_Definition_overview_vector.svg\ul0\cf0}}}}\cf0\f0\fs22\par
+\par
+\par
+\cf2 11.promises,asyn await, promises methods?\par
+\cf0\par
+\cf4 synchronous\cf0 :\par
+JavaScript is single-threaded and synchronous language. The code is executed in order one at a time\par
+\par
+\cf4 Promise\cf0 :\par
+Asynchronous:\par
+An asynchronous function is implemented using async, await and promises.\par
+\par
+\cf4 async\cf0 : The \'e2\'80\f1\u339?async\f0\'e2\'80\'9d keyword defines an asynchronous function.\par
+Syntax\par
+async function FunctionName()\{\par
+    ...\par
+\}\par
+\cf4 await\cf0 : The \'e2\'80\f1\u339?async\f0\'e2\'80\'9d function contains \'e2\'80\f1\u339?await\f0\'e2\'80\'9d that pauses the execution of \'e2\'80\f1\u339?async\f0\'e2\'80\'9d function. \'e2\'80\f1\u339?await\f0\'e2\'80\'9d is only valid inside the \'e2\'80\f1\u339?async\f0\'e2\'80\'9d function.\par
+Promise: A Promise is a proxy value. It tells us about the success/failure of the asynchronous event. A Promise must contain resolve() or reject() call or else the consumer of the Promise will never know whether Promise is fulfilled or not. If that happened then the program will keep waiting for await and that code block will never be executed further. There is a lot more to Promise but we can make Asynchronous function without any deep knowledge of it.\par
+\par
+{{\field{\*\fldinst{HYPERLINK https://www.geeksforgeeks.org/how-to-create-an-asynchronous-function-in-javascript/ }}{\fldrslt{https://www.geeksforgeeks.org/how-to-create-an-asynchronous-function-in-javascript/\ul0\cf0}}}}\f0\fs22\par
+\par
+\par
+\cf2 What is the difference between freeze and seal in JavaScript ?\par
+\cf0  Object.seal() allows changes to the existing properties of an object whereas Object.freeze() does not allow so. Object.freeze() makes an object immune to everything even little changes cannot be made. Object.seal() prevents from deletion of existing properties but cannot prevent them from external changes.\par
+\par
+\par
+ Depicts implementation of \cf4 Object.seal().\cf0\par
+\par
+\par
+<script>\par
+    // creates an object\par
+    var obj = \{\par
+        // assigns 10 to value \par
+        value: 10\par
+    \};\par
+    // creates a non-extensible object\par
+    Object.seal(obj);\par
+    // the value gets updated to 20\par
+    obj.value = 20;\par
+    console.log(obj.value);\par
+</script>\par
+Output: 20\par
+\cf4 freeze\cf0 :\par
+<script>\par
+    // creates an object\par
+    var obj = \{\par
+        // assigns 10 to value \par
+        value: 10\par
+    \};\par
+    // creates a non-extensible object\par
+    Object.freeze(obj);\par
+    // updates the value\par
+    obj.value = 20;\par
+    // but cannot change the existing value\par
+    console.log(obj.value);\par
+</script>\par
+Output: 10\par
+\par
+\cf2 javascript debounce(\'e0\'ae\'b5\'e0\'ae\'bf\'e0\'ae\'b5\'e0\'ae\'be\'e0\'ae\'a4\'e0\'ae\'bf\'e0\'ae\f2\bullet\f0\'e0\'af\'8d\'e0\'ae\f2\bullet )?\par
+\par
+javascript Currying?\par
+\cf0\par
+Currying is an advanced technique of working with functions. It\f0\'e2\'80\'99s used not only in JavaScript, but in other languages as well.\par
+\par
+Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).\par
+function sum(a, b) \{\par
+  return a + b;\par
+\}\par
+\par
+let curriedSum = _.curry(sum); // using _.curry from lodash library\par
+\par
+alert( curriedSum(1, 2) ); // 3, still callable normally\par
+alert( curriedSum(1)(2) ); // 3, called partially\par
+\par
+\par
+Currying doesn\'e2\'80\'99t call a function. It just transforms it.\par
+\par
+Basic define statement:\par
+Currying is a process to reduce functions of more than one argument to functions of one argument with the help of lambda calculus.\par
+\cf2\par
+prototype?\par
+\cf0 Remember, new objects can be created with a constructor function, like new F().\par
+\par
+If F.prototype is an object, then the new operator uses it to set [[Prototype]] for the new object.\par
+output:\par
+let animal = \{\par
+  eats: true\par
+\};\par
+\par
+function Rabbit(name) \{\par
+  this.name = name;\par
+\}\par
+\par
+Rabbit.prototype = animal;\par
+\par
+let rabbit = new Rabbit("White Rabbit"); //  rabbit.__proto__ == animal\par
+\par
+alert( rabbit.eats ); // true\par
+\par
+\cf2\par
+\par
+Higher-Order Functions?\par
+\cf0 Higher-Order function is a function that receives a function as an argument or returns the function as output.\par
+Without Higher-order function\par
+const arr1 = [1, 2, 3];\par
+const arr2 = [];\par
+for(let i = 0; i < arr1.length; i++) \{\par
+  arr2.push(arr1[i] * 2);\par
+\}\par
+// prints [ 2, 4, 6 ]\par
+console.log(arr2);\par
+With Higher-order function map\par
+const arr1 = [1, 2, 3];\par
+const arr2 = arr1.map(function(item) \{\par
+  return item * 2;\par
+\});\par
+console.log(arr2);\par
+\par
+\par
+\cf2 Javascript first class function?\par
+\cf0\par
+\cf4 1) Functions can be assigned to variables\par
+\cf0\tab\par
+const sayHello = () => \{\par
+  return "hello";\par
+\}\par
+console.log(sayHello());\par
+\par
+\cf4 2) Functions can be passed as arguments to other functions\par
+\cf0 const sayHello = () => \{\par
+  return "hello";\par
+\}\par
+console.log(sayHello());\par
+\par
+\par
+const sayHelloToPerson =  (greeter, person) => \{\par
+   return greeter() + "" + person;\par
+\}\par
+\par
+sayHelloToPerson(sayHello,'test');\par
+\cf4 3) Functions can be returned from other functions\par
+\par
+\cf0\par
+\cf2 Javascript event bubbling vs capturing\cf0\par
+\par
+\par
+With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.\par
+\par
+With capturing, the event is first captured by the outermost element and propagated to the inner elements.\par
+\par
+\cf2 Javascript Design pattern:\par
+\cf0\par
+Design patterns are advanced object-oriented solutions to commonly occurring software problems.\par
+\par
+Array helper functions (forEach, map, filter, find, every, some reduce)\par
+\par
+\par
+Arrow functions - (RJS - Done )\par
+Classes\par
+Enhanced object literals\par
+Template strings or string interpolation - (RJS - Done )\par
+Default function arguments\par
+Rest and spread operators\par
+Destructuring\par
+What is the difference between ES5 classes and ES6 classes?\par
+What is Babel in Javascript?\par
+How to implement singleton in Javascript?\par
+
+\pard\nowidctlpar\lang9 What are exports and imports?\par
+What is difference between module.exports and export?\par
+Local storage & Session storage?\par
+How to get the last index of a string in Javascript?\par
+How to get the primitive value of a string in Javascript?\par
+QuickSort Work\par
+
+\pard\lang1033\par
+\cf2 Techincal questions:\par
+\cf0\par
+Q - 1\par
+var a = 1\par
+function foo()\{\par
+ var a = 2\par
+ console.log(a)\par
+\}\par
+foo()\par
+console.log(a);\par
+\par
+Q - 2\par
+function foo()\{\par
+    a = 2\par
+  \}\par
+  foo()\par
+  console.log(a);\par
+\par
+Q - 3\par
+\par
+function outerFunc(outerParam) \{\par
+  function innerFunc(innerParam) \{\par
+     outerParam["b"] = innerParam;\par
+  \}\par
+  return innerFunc;\par
+\}\par
+\par
+const obj = \{a:1\}\par
+const example = outerFunc(obj);\par
+const answer = example(2)\par
+console.log(obj);\par
+\par
+Q-4\par
+let arr =[1,2]\par
+function test(array)\{\par
+  array.push(3)\par
+\}\par
+test(arr)\par
+console.log(arr)\par
+\par
+Q-5\par
+\par
+const carDetails = \{\par
+    name: "Tomer",\par
+    getName()\{\par
+       return this.name;\par
+    \},\par
+  \};\par
+  var name = "Joe";\par
+  var getCarName = carDetails.getName;\par
+  console.log(getCarName());\par
+\par
+Q-6\par
+console.log(a)\par
+console.log(b)\par
+var a = 2\par
+let b = 2\par
+\par
+\par
+Q-7\par
+a()\par
+function a()\{\par
+    console.log("a")\par
+\}\par
+b();\par
+var b =function()\{\par
+    console.log("b")\par
+\}\par
+\par
+\par
+Q-8\par
+function x()\{\par
+   for(var i=1;i<=5;i++)\{\par
+      setTimeout(function()\{\par
+         console.log(i);\par
+      \},\par
+      i*1000);\par
+   \}\}\par
+\par
+x();\par
+\par
+Q-9:\par
+
+\pard\nowidctlpar\sb105\sa105\sl13\slmult0\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\cf5\highlight6\f3\fs24\lang9 function\cf7\fs20  \cf8\fs24 foo\cf9 ()\cf7\fs20  \cf9\fs24\{\cf7\fs20\par
+  \cf5\fs24 let\cf7\fs20  a \cf10\fs24 =\cf7\fs20  b \cf10\fs24 =\cf7\fs20  \cf11\fs24 0\cf9 ;\cf7\fs20\par
+  a\cf10\fs24 ++\cf9 ;\cf7\fs20\par
+  \cf5\fs24 return\cf7\fs20  a\cf9\fs24 ;\}\cf7\fs20\par
+\cf8\fs24 foo\cf9 ();\cf7\f4\par
+
+\pard\cf0\highlight0\f0\fs22\lang1033\par
+}
+ 

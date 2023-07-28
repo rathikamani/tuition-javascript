@@ -1,0 +1,198 @@
+
+
+HTML
+framework meaning
+https protocol
+how server client commnunication
+use of doctype - if doctype is not added paage will not rendered in quirks mode design wise it broken it will not adapt html5 features..
+Diff html4 and html 5 new features - audio vedio semantic tag email sttibutes svg
+semantic and non semantiic tags
+virtual Dom - it used to avoid rerender the whole dom again we can manipulate its
+
+CSS
+CSS3 features -  CSS3 selectors, rounded corners, box shadows, RGBA, HSL and HSLA colors, box sizing, 
+Opacity, CSS3 Gradients, transitions, transformations, 
+animations, multi-column layout, flex box, CSS grids, embedded fonts and Responsive web design
+
+inline and block inline-block
+The width and height of the display: inline elements can’t be changed.
+The width and height of the display: inline-block elements can be changed.
+
+
+absolute relative fixed
+
+how to align center in div
+
+flex and grid
+
+display and opacity and visibility 
+
+
+SCSS 
+
+
+AJAX
+without reloading the page we can add datas
+Update a web page without reloading the page
+Request data from a server - after the page has loaded
+Receive data from a server - after the page has loaded
+Send data to a server - in the background
+
+
+BOOTSTRAP
+
+Javascript
+by deafault is sync we can change it to asyc
+Destructuring - easy way to extract value from array or object
+hoisting - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
+ (to the top of the current script or the current function)
+closures - a closure gives you access to an outer function's scope from an inner function
+promise
+map function 
+for each and for difference
+event looping
+first 3letter normal and others password
+let var diff - let block scoped where var function scoped
+== and ===
+javascript throttle and debounce vs lodash
+
+VUE JS
+Vue features - Virtual Dom, light weight, components reusable store concepts
+vue life cylce - before created created before mount mount before update updated before destroy destoryed
+diff between v-if and show - 
+why it is not to use v-if in v-for loop
+use of computed - to do more complex logics we can use computed
+debounce and throttle - throttle will slowly call your function while you scroll (every X milliseconds). 
+Debounce will wait until after you're done scrolling to call your function.
+computed and watchers
+async components - used to load component when its needed dynamically
+keep alive tag
+inline-template
+v-bind and v-model
+two way communication - v-model
+key attribute
+perload
+perfetch
+DNS
+why to use key in for loop not index
+vuex setters and getters
+axios
+VUEX store management
+
+
+
+
+
+Tasks
+Question 1
+x = 2; 
+function abc() {​​​​​
+    console.log(x);
+    var x;
+}​​​​​ abc();
+
+Question 2
+
+function testTimeOut() {​​​​​
+    for (var i = 1; i<=3; i++){​​​​​
+        setTimeout(function () {​​​​​
+             console.log(i)
+        }​​​​​, 1000)
+    }​​​​​
+}​​​​​
+Question 3
+
+const input = "Hello World"
+
+output should be = "Dlrow Olleh"
+
+function revStr(input) {​​​​  // your code here return output;}​​​​
+
+const person1 = {​​​​​name : "james"}​​​​​
+
+const person2 = person1 ;
+
+person2.name = "lorem";
+
+console.log('person 1', person1);
+
+console.log('person 2', person2);
+
+const arr = [2,4,8,10];
+
+<div class="parent"><div class="child"></div></div>
+
+interview Tasks
+
+Question 4
+
+Replace if arr of x values equal to z  by y. 
+
+var x=[1,2,5,8,8,2,1,4,6,7,4];
+
+var x=[1,2,5,1,2,3,1,2,3,2,1,4,6,7,4]; 
+
+var y = [1,2,3]; 
+
+var z = 8;
+
+var ss1 = [];
+
+var ss2 = [1,2,3,8,8,4,5,8];
+
+var ss3 = [1,2,3];
+
+ss2.map(function(e){
+
+        e == 8 ? ss3.map(function(s){ss1.push(s);}):ss1.push(e);
+
+});
+
+Question 5
+
+let ss = 
+[
+{
+    name:'arun',
+},
+{
+    name:'sridevi'
+},
+{
+    name:'rohan'        
+}
+];
+
+
+16-05-2023:
+sync javascript with examples
+aync with example
+how to concate to numbers
+jest testcases
+slots
+var a = 123;
+var b = 456;
+var c = 123456
+
+c answer ipadi varanum
+javascript literals
+composition API vue 3
+vue 3 new features
+let b = 10;
+function myfunc() {
+let b= 20;     
+console.log(b)    
+}
+myfunc();
+console.log(b)
+answer
+var a = 10;
+function myfunc() {
+var a= 20; 
+console.log(a)    
+}
+myfunc();
+console.log(a)
+
+ 
+
