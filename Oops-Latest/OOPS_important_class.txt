@@ -1,0 +1,24 @@
+1.What does Web API return?
+the Web API controller returns HttpResponseMessage object.
+Extensible Markup Language (XML)
+JavaScript Object Notation (JSON)
+
+2.event loop?
+The event loop is a constantly running process that monitors both the callback queue and the call stack.
+The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+https://dev.to/ejjraifihamza/javascript-event-loop-3kd4
+
+3.Callback queue
+The Callback queue is a data structure that operates on the FIFO (first-in-first-out) principle. Callback functions that need to be asynchronously executed, are pushed onto the callback queue. These are later pushed to the Call stack to be executed (when the event loop finds an empty call stack).
+
+4.promises?
+    Pending.
+    Fulfilled.
+    Rejected.
+5.generator?
+
+6.async-await?
+
+7.try/catch?
+
+8.then?
