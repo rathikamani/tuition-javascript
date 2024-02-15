@@ -2,3 +2,49 @@ What is hoisting in JavaScript?
 In JavaScript, hoisting refers to the built-in behavior of the language through 
 which declarations of functions, variables, and classes are moved to the top of their scope
 – all before code execution. In turn, this allows us to use functions, variables, and classes before they are declared.
+
+How to stop function hoisting in JavaScript?
+The easiest way to avoid hoisting problems is to declare all variables at the beginning of the scope. 
+In fact this is considered a JavaScript programming Best Practice.
+
+What is Closures?
+a closure gives you access to an outer function's scope from an inner function. 
+In JavaScript, closures are created every time a function is created, at function creation time.
+
+Ex:
+function init() {
+  var name = "Mozilla"; // name is a local variable created by init
+  function displayName() {
+    // displayName() is the inner function, that forms the closure
+    console.log(name); // use variable declared in the parent function
+  }
+  displayName();
+}
+init();
+
+callback hell:
+
+getArticlesData(20, (articles) => {  
+  console.log("article lists", articles);  
+  getUserData(article.username, (name) => {  
+    console.log(name);  
+    getAddress(name, (item) => {  
+      console.log(item);  
+      //This goes on and on...  
+    }  
+}) 
+ 
+In the above example, getUserData takes a username that is dependent on the article list or needs to be extracted 
+getArticles response which is inside the article. getAddress also has a similar dependency, 
+which is dependent on the getUserData's response. This situation is called callback hell.
+
+ 
+
+
+
+
+
+
+
+
+getAddress also has a similar dependency, which is dependent on the getUserData's response. This situation is called callback hell.
