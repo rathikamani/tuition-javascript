@@ -1,0 +1,9 @@
+What are promises in JavaScript?
+How Promises Work in JavaScript – A Comprehensive Beginner's ...
+In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value,
+but if something goes wrong then it will produce a reason why the promise failed. The possible outcomes here are similar to that of promises in real life.
+
+https://www.freecodecamp.org/news/guide-to-javascript-promises/
+
+Event loop?
+https://www.mwanmobile.com/node-js-animated-event-loop/
