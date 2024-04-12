@@ -1,0 +1,407 @@
+
+Javascript partices questions:
+Array:
+1) array sort without in-build methods
+2) array string reverse without in-build methods
+3) array flat without in-build methods
+4) array duplicate remove without in-build methods
+5) array second large number get
+6) array n numbers time looping array(array.pop)
+7) array [3, 5, 2, 9] value findout
+8) [-1, 22, 56, -1, 24, 43, -1, 98, 76, -1, 8] do not change -1 position and sort values
+9) array separate the unique values and duplicate values?
+10) array Moves the zeros to last of an array?
+11) LongestCommonprefix?
+12) Write a program to swap the value with and without third variable.
+13) Check if One Array can be Nested in Another
+
+
+String:
+1) Given two strings, return true if they are anagrams of one another
+2) Find the Vowels
+3) How to compress a string. (AAABBCCDDD) => (A3B2C2D3)
+https://www.linkedin.com/posts/vandana--rana_frontend-javascript-interviewquestion-activity-7182086357983404035-6AgC/?utm_source=share&utm_medium=member_android
+4) Write a program to find count how many times "ant" is coming in the given string.
+
+
+
+Timeing Questions:
+1)let a = "10:00 AM - 8:30 am";
+
+
+Answer:
+
+Array:
+1) array sort without in-build methods?
+
+  
+let arr = [1, 2, 1, 3, 1, 4, 3, 4, 5, 6, 2];
+ 
+function sortArray(arr) {
+    for(let i=0; i < arr.length; i++) {
+        for(let j=0; j < arr.length; j++) {
+            if(arr[j] > arr[j + 1]) {
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+        }
+    }
+    return arr
+}
+console.log(sortArray(arr))
+
+
+2)array string reverse without in-build methods?
+let str = "Pramod";
+let strRev = ""
+function getStrRev(str) {
+    for(let i= str.length - 1; i >= 0; i--) {
+        strRev += str[i]
+    }
+    return strRev;
+}
+ 
+console.log(getStrRev(str));
+
+3)array flat without in-build methods?
+const nestedArray = [1, 2, [3, 4], [5, [6, 7, [8, [9]]]]];
+ 
+function customArr(arr) {
+    let flattendArr = [];
+    function flatten(arr) {
+        for(let i=0; i < arr.length; i++) {
+            if(Array.isArray(arr[i])) {
+                flatten(arr[i])
+            } else {
+                flattendArr.push(arr[i])
+            }
+        }
+    }
+    flatten(arr);
+    return flattendArr;
+}
+ 
+console.log(customArr(nestedArray));
+
+4)array duplicate remove without in-build methods?
+
+const arr = [1, 2, 3, 4, 5, 2, 3, 4, 2, 7];
+ 
+function getUniqueArr(arr) {
+    let uniqueArr = [];
+    for(let i=0; i < arr.length; i++) {
+        let isUnique = true;
+        for(let j=0; j < uniqueArr.length; j++) {
+            if(arr[i] === uniqueArr[j]) {
+                isUnique = false;
+                break;
+            }
+        }
+        if(isUnique) {
+            uniqueArr.push(arr[i])
+        }
+    }
+    return uniqueArr;
+}
+ 
+console.log(getUniqueArr(arr));
+
+5)array second large number get?
+const arr = [10, 5, 20, 15, 25];
+ 
+function getSecondLargest(arr) {
+    let largest = arr[0];
+    let secondLargest = arr[0];
+    for(let i=1; i < arr.length; i++) {
+        if(arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if(arr[i] > secondLargest && arr[i] !== largest) {
+            secondLargest = arr[i];
+        }
+    }
+    return secondLargest;
+}
+console.log(getSecondLargest(arr));
+
+6)array n numbers time looping array(array.pop)?
+let array = [1, 2, 3, 4, 5]; // Your array
+let n = array.length; // Number of elements in the array
+
+// Loop through the array and perform an operation on each element
+while (n > 0) {
+    let element = array.pop(); // Remove the last element and get its value
+    // Perform your operation on the element here
+    console.log(element); // For example, just logging the element
+    n--; // Decrement the count of elements
+}
+
+7) array [3, 5, 2, 9] missing value findout
+function findMissingNumbers(arr) {
+    const allNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const missingNumbers = [];
+
+    for (let i = 0; i < allNumbers.length; i++) {
+        if (!arr.includes(allNumbers[i])) {
+            missingNumbers.push(allNumbers[i]);
+        }
+    }
+
+    return missingNumbers;
+}
+
+// Example usage:
+const givenArray = [2, 4, 1, 3, 6, 9, 7];; // Example array
+const missingNumbers = findMissingNumbers(givenArray);
+console.log("Missing numbers:", missingNumbers);
+
+8)[-1, 22, 56, -1, 24, 43, -1, 98, 76, -1, 8] do not change -1 position and sort values?
+[-1, 22, 56, -1, 24, 43, -1, 98, 76, -1, 8]
+const numbers = [-1, 22, 56, -1, 24, 43, -1, 98, 76, -1, 8]
+// Try edit me
+ 
+const sortedPositiveNumbers = numbers
+.filter(num=> num!==-1)
+.sort((a,b)=>a-b)
+ 
+numbers.forEach((num,index)=> num!==-1 && (numbers[index] = sortedPositiveNumbers.shift()))
+ 
+console.log(numbers)
+
+9)array separate the unique values and duplicate values?
+function separateUniqueAndDuplicates(arr) {
+    const uniqueValues = [];
+    const duplicateValues = [];
+    const visited = {};
+
+    arr.forEach(num => {
+        if (visited[num]) {
+            duplicateValues.push(num);
+        } else {
+            uniqueValues.push(num);
+            visited[num] = true;
+        }
+    });
+
+    return {
+        uniqueValues: uniqueValues,
+        duplicateValues: duplicateValues
+    };
+}
+
+// Example usage:
+const array = [1, 4, 6, 6, 9, 0]; // Example array
+const result = separateUniqueAndDuplicates(array);
+console.log("Unique values:", result.uniqueValues);
+console.log("Duplicate values:", result.duplicateValues);
+
+10)array Moves the zeros to last of an array?
+function moveZerosToEnd(arr) {
+    let nonZeroIndex = 0;
+
+    // Move non-zero elements to the front of the array
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 0) {
+            arr[nonZeroIndex++] = arr[i];
+        }
+    }
+
+    // Fill the remaining positions with zeros
+    for (let i = nonZeroIndex; i < arr.length; i++) {
+        arr[i] = 0;
+    }
+
+    return arr;
+}
+
+// Example usage:
+const array = [2, 3, 0, 4, 5, 9, 0, 8, 8, 9]; // Example array
+const result = moveZerosToEnd(array);
+console.log("Array with zeros moved to the end:", result);
+
+11)longestCommonPrefix?
+function longestCommonPrefix(strs) {
+    if (strs.length === 0) return ""; // If the array is empty, return an empty string
+    
+    // Loop through the characters of the first string
+    for (let i = 0; i < strs[0].length; i++) {
+        // Check if the character at index i is the same for all strings
+        for (let j = 1; j < strs.length; j++) {
+            if (i >= strs[j].length || strs[j][i] !== strs[0][i]) {
+                // If the character is different or one of the strings is shorter than i characters, return the prefix found so far
+                return strs[0].substring(0, i);
+            }
+        }
+    }
+    
+    // If all strings are identical, return any string as the longest common prefix
+    return strs[0];
+}
+
+// Example usage:
+const strings = ["flower", "flow", "flight"];
+console.log("Longest common prefix:", longestCommonPrefix(strings)); 
+
+12) Write a program to swap the value with and without third variable.?
+let a = 10;
+let b=12;
+ 
+// let temp = a;
+// a = b;
+// b = temp;
+[a, b] = [b, a];
+console.log(a, b)
+
+13) Check if One Array can be Nested in Another?
+function canNest(arr1,arr2){
+    for(let i=0; i < arr1.length; i++){
+           if(!arr1.includes(arr2[i])){
+               return true;
+           }
+           return false;
+    }
+}
+
+var checkOutput = canNest([1, 2, 3, 4], [5, 6]);
+console.log(checkOutput);
+
+
+
+String:
+1)Given two strings, return true if they are anagrams of one another
+function areAnagrams(a, b) {
+    // Remove non-alphabetic characters and convert to lowercase
+    a = a.replace(/[^A-Za-z]/g, '').toLowerCase();
+    b = b.replace(/[^A-Za-z]/g, '').toLowerCase();
+    
+    // Check if the lengths of the strings are equal
+    if (a.length !== b.length) {
+        return false;
+    }
+    
+    // Sort the characters in the strings
+    var sortedA = a.split('').sort().join('');
+    var sortedB = b.split('').sort().join('');
+    
+    // Compare the sorted strings
+    return sortedA === sortedB;
+}
+
+// Example usage
+var a = "Rathika";
+var b = "Ramani";
+console.log(areAnagrams(a, b)); // Output: false
+
+2)Find the Vowels?
+// Convert the string to lowercase to handle both uppercase and lowercase vowels
+str = str.toLowerCase();
+    
+// Define an array to store the vowels found in the string
+var vowels = [];
+
+// Iterate through each character of the string
+for (var i = 0; i < str.length; i++) {
+    // Check if the character is a vowel
+    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+        // If the character is a vowel, add it to the vowels array
+        vowels.push(str[i]);
+    }
+}
+
+// Return the array of vowels found in the string
+return vowels;
+}
+
+// Example usage
+var str = "hello";
+console.log(findVowels(str));
+
+3)How to compress a string. (AAABBCCDDD) => (A3B2C2D3)
+function compressString(str) {
+    // If the string is empty or has only one character, return it as is
+    if (str.length <= 1) {
+        return str;
+    }
+    
+    var compressed = ''; // Initialize an empty string to store the compressed version
+    
+    var count = 1; // Initialize count for consecutive characters
+    for (var i = 1; i <= str.length; i++) {
+        // Check if the current character is the same as the previous one
+        if (str[i] === str[i - 1]) {
+            count++; // Increment count for consecutive characters
+        } else {
+            // If the current character is different, append the character and its count to the compressed string
+            compressed += str[i - 1] + count;
+            count = 1; // Reset count for the new character
+        }
+    }
+    
+    return compressed;
+}
+
+// Example usage
+var str = "AAABBCCDDD";
+console.log(compressString(str)); // Output: "A3B2C2D3"
+
+4)Write a program to find count how many times "ant" is coming in the given string.?
+function countSubstringOccurrences(str, substr) {
+    // Initialize count to store the number of occurrences
+    var count = 0;
+
+    // Start searching for the substring from index 0
+    var index = str.indexOf(substr);
+
+    // Iterate through the string until the substring is not found
+    while (index !== -1) {
+        // Increment count for each occurrence found
+        count++;
+        // Move the starting index for the next search after the current occurrence
+        index = str.indexOf(substr, index + 1);
+    }
+
+    return count;
+}
+
+// Example usage
+var str = "Raathantjijijantjiasdjant";
+var substr = "ant";
+console.log(countSubstringOccurrences(str, substr)); // Output: 3
+
+Time:
+1)let a = "10:00 AM - 8:30 am";
+let a = "10:00 AM - 12:30 PM";
+let timeSplit = a.split(' - ');
+let timeStart = timeSplit[0];
+let timeEnd = timeSplit[1];
+ 
+ 
+function getMintes(time){
+   const timeSplit = time.split(" ");
+   const onlyTime = timeSplit[0];
+   const AMORPM = timeSplit[1];
+   const onlyTimeSplit = onlyTime.split(":");
+   let hours = Number(onlyTimeSplit[0]);
+   // set 12 hr
+   if(AMORPM === 'AM' && hours == 12){
+    hours = 0;
+   }
+   // covert to 24 hrs
+   if(AMORPM === 'PM' && hours != 12 && hours >= 1){
+    hours = hours + 12;
+   }
+   // covert minutes to hrs
+   const minutes = Number(onlyTimeSplit[1] /60);
+   return hours+minutes;
+}
+ 
+let outputStart = getMintes(timeStart);
+let outputEnd = getMintes(timeEnd);
+console.log("outputStart",outputStart);
+console.log("outputEnd",outputEnd);
+let diff = outputEnd - outputStart;
+let hours = Math.floor(diff);
+let minutes = Math.round((diff - hours) * 60);
+console.log(hours,minutes); 
+
