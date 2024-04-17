@@ -255,3 +255,19 @@ console.log(numbers);
 
 [1, 2, 3, empty × 6, 4]
 
+Q-36:
+x = 2; 
+function abc() {​​​​​
+    console.log(x);
+    var x;
+}​​​​​ abc();
+
+Q-37:
+function testTimeOut() {​​​​​
+        for (var i = 1; i<=3; i++){​​​​​
+            setTimeout(function () {​​​​​
+                 console.log(i)
+            }​​​​​, 1000)
+        }​​​​​
+    }​​​​​
+
