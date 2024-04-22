@@ -1,0 +1,109 @@
+
+Javascript:
+1.promise.all ployfill example
+2.rewrite without async/await
+3.curried sum function examples
+4.print "pramod" using stars
+5.print pattern in js
+6.substring count javascript
+7.callback function in javascript
+8.call,apply,bind examples
+9.map,filter,reduce in js
+10.summing Array pairs
+11.array calculation program.
+12.web interceptor examples
+13.primitives and non-primities data types.
+14.null or undefined 
+15.call by value/call by refence
+16.callback hell simplified with promises
+17.generator function example
+18.Async vs promises in js
+19.js promises methods
+20.event loop
+21.count occurrences in javascript
+22.prime number checker
+23.javascript lexical exmpale
+24.arrow vs function diff
+25.es6 feature 
+26.throttling in javascript
+27.debouncing in javascript
+28.js shallow vs deep copy
+29.js prototyping vs inheritance
+30.destructure in js
+31.js object methods in example
+32.js data types and examples
+33.js promises with examples
+34.async/await in js example
+35.js scope vs scopechain
+36.spread vs rest operators
+
+
+
+
+React:  
+1.dependency and devdependency in React
+2.react tree shaking
+3.react build tools comparsion
+4.react HMR faster development
+5.css in react methods
+6.React context explained with example
+7.React JWT Authentication example
+8.memoization in react
+9.react list rendering optimization
+10.render props in react
+11.SSR vs CSR in react
+12.code splitting in react
+13.react fiber performance improvement
+14.react error code explanation
+15.redux API call example
+16.react todo CRUD.
+17.redux vs usecontext
+18.react redux pagination example
+19.observable in js with rxjs
+20.usecontext hook example
+21.react hooks explainted
+22.react timer with hooks
+23.react shadow DOM
+24.pure function in js
+25.react i18n libraries
+26.Axios vs fetch in React
+27.useEffect in react js
+28.react.memo.optimization exmple
+29.usememo example
+30.pros drilling sloutions react
+31.control function invocation context
+32.webpack bundling example
+33.react 18 features preview
+34.redux action creator
+35.redux toolkit example
+36.class vs functional components
+37.lazy loading in react
+38.count vs uncount component
+39.redux thunk basics
+40.react usecallback hook
+41.react VDOM vs Real Dom
+42.react router
+43.react life-cycle methods
+44.redux flow in react
+45.react forwarding refs
+46.useref in react
+47.code splitting benefite
+48.react pure function
+49.react pure components
+50.Why We use strict mode in react.
+51.Why react render two times if we use useEffect.
+52.what is option call when we do any api call.
+53.useContext vs Redux
+54.performance how we can check for react application
+55.useMemo, useCallback
+56.synthentic event
+57.useContext and it is advantages
+58.What is use case Context api
+59.How to connect aem and react
+60.What is key and example
+61.What is bad key
+62.Different between Onclick and on change in react
+63.map object()
+
+
+
