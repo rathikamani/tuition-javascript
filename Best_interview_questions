@@ -1,0 +1,37 @@
+
+
+
+- Introduction 
+- Data types and variables
+- Js Execution Context
+- Hoisting
+- Function Declaration vs Function Expression
+- undefined vs not defined
+- Scope
+- Errors: reference, syntax, type
+- Closures 
+- Callbacks
+- How async js code works? 
+- Js Engine (v8) 
+- High-Order functions
+- Promises
+- Promise API
+- Async/Await
+- Try/Catch
+- this keyword
+- "use strict"
+- call apply bind
+- Currying,
+- Prototype
+- Inheritance
+- Abstraction
+- Encapsulation
+- Static props and methods
+- Event bubbling and capturing
+- Event delegation
+- async/defer
+- Coercion 
+- Abstract Operations 
+- == vs ===
+- NaN
+- Debouncing and throttling 
